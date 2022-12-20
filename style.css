@@ -1,0 +1,16 @@
+.heading{
+width: 100%;
+text-align: left;
+}
+
+.heading h3{
+    display: inline;
+}
+
+.big_image{
+width: 100%;
+}
+
+#start{
+    font-size: 50px;
+}
