@@ -14,3 +14,9 @@ width: 100%;
 #start{
     font-size: 50px;
 }
+
+.copy_right_footer{
+    background-color: black;
+    color: whitesmoke;
+    line-height: 2;
+}
