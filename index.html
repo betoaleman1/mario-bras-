@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,58 +10,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
     <title>p5.play.Mario</title>
-    <!-- link p5.js and its addons like p5.dom.js or p5.sound.js -->
+    <!-- Enlace p5.js y sus complementos como p5.dom.js o p5.sound.js -->
     <script src="lib/p5.min.js" type="text/javascript"></script>
-    <!-- link p5.play.js -->
+    <!-- Enlace p5.play.js -->
     <script src="lib/p5.play.js" type="text/javascript"></script>
-    <!-- link p5.dom.js -->
+    <!-- Enlace p5.dom.js -->
     <script src="lib/p5.dom.js" type="text/javascript"></script>
 
-    <!-- link your javascript sketch -->
+    <!-- Enlaza tu archivo de Javascript -->
     <script src="scripts/sprites.js" type="text/javascript"></script>
-
     <script src="main.js" type="text/javascript"></script>
-
     <script src="characters_environment.js" type="text/javascript"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
-
   </head>
   <body background="background.jpg">
-<center>
-  <div class="btn btn-primary heading">
-<h3>
-  IA mario bros
-</h3>
-  </div>
-  <img src="mario.jpg" class="big_image">
-  <br>
-  <br>
-  <button class="btn btn-success" onclick="startGame()" id="start">
-jugar :)
-  </button>
- <h4 class="copy_right_footer">codigo fuente: <a href="https://github.com/linuk">creditos del juego </a></h4> 
- <div id="myModal" class="modal fade ">
-  <div class="modal-dialog" >
-    <!-- Contenido Modal -->
-    <div class="modal-content">
+    <center>
 
-      <div class="modal-header">
-        <button class="close" data-dismiss="modal">&times;</button>
-        <h4>Instrucciones</h4>
+      <div class="btn btn-primary heading">
+        <h3>JUEGO DE MARIO AI</h3>
+        <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Instrucciones</button>
       </div>
 
-       <div class="modal-body">
-          <img src="jump.png" class="img-responsive instruction_image">
-          <img src="right.png" class="img-responsive instruction_image">
-          <img src="left.png" class="img-responsive instruction_image">
-        </div>
+      <img src="mario.jpg" class="big_image">
+      <br><br>
+      <button class="btn btn-success" onclick="startGame()" id="start">Jugar</button>
+      <br><br>
+      <h3 id="status" class="btn btn-warning"></h3>
+      <br><br>
+      <div id="canvas"></div>
+      <div id="game_console"></div>
+      <h4>Código fuente: <a href="https://github.com/linuk">Linuk</a> || Créditos del juego: Mario</h4>
+      
+      <div id="myModal" class="modal fade ">
+        <div class="modal-dialog" >
+          <!-- Contenido Modal -->
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h4>Instrucciones</h4>
+            </div>
+      
+             <div class="modal-body">
+                <img src="jump.png" class="img-responsive instruction_image">
+                <img src="right.png" class="img-responsive instruction_image">
+                <img src="left.png" class="img-responsive instruction_image">
+              </div>
 
-    </div>
-  </div>
-</div>
+          </div>
+        </div>
+      </div>
 </center>
-  </body>
+</body>
 </html>

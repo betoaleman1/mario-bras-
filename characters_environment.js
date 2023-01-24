@@ -17,10 +17,10 @@ var control={
 // Estado interno del juego que podrían afectar el balance del juego o su jugabilidad.
 var gameConfig={
   
-  // start - (inciar), playing - (jugando), over - (fin)
+  // start - (inicio), playing - (jugando), over - (terminado)
   status: "start", 
   
-  // vidas iniciales de mario
+  // Vidas iniciales de Mario
   initialLifes: 4,
 
   // Velocidad de movimiento del personaje
@@ -165,7 +165,7 @@ function instializeInSetup(character){
 }
 
 function initializeCharacterStatus(character){
-  // Configuración inicial de la configuración de un pesonaje 
+  // Configuración inicial de la configuración de un personaje 
   character.scale=0.35;
   character["killing"]=0; //mientras está matando al enemigo
   character["kills"]=0;
@@ -194,7 +194,7 @@ function instializeInDraw(){
   enemyMushrooms.collide(pipes);
   clouds.displace(clouds);
 
-  // Hacer que el personaje no sobreponga a otros objetos
+  // Hacer que el personaje no sobreonga a otros objetos
   if(mario.live){
     bricks.displace(mario);
     pipes.displace(mario);
@@ -372,7 +372,7 @@ function StepOnEnemy(obj1,obj2){
 }
 
 
-// Hacer que el personaje muera si el enemigo lo toca
+// Hacer que el personaje muera si es tocado por el enemigo
 function die(character){
     character.live=false;
     character.dying+=120;
